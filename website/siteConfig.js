@@ -9,20 +9,11 @@
 // site configuration options.
 
 /* List of projects/orgs using your project for the users page */
-const users = [
-  {
-    caption: 'User1',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    infoLink: 'https://www.facebook.com',
-    pinned: true,
-  },
-];
 
 const siteConfig = {
-  title: 'Test Site' /* title for your website */,
-  tagline: 'A website for testing',
-  url: 'https://your-docusaurus-test-site.com' /* your website url */,
+  title: 'Legacy Rails Apps' /* title for your website */,
+  tagline: 'Upgrade the quality of an existing app!',
+  url: 'https://www.legacyrailsapps.com' /* your website url */,
   baseUrl: '/' /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -39,9 +30,6 @@ const siteConfig = {
   headerLinks: [
     {doc: 'doc1', label: 'Docs'}
   ],
-
-  // If you have users set above, you add it here:
-  users,
 
   /* colors for website */
   colors: {
@@ -65,7 +53,7 @@ const siteConfig = {
   copyright:
     'Copyright © ' +
     new Date().getFullYear() +
-    ' Your Name or Your Company Name',
+    ' Ruby on Racetracks',
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks
