@@ -45,9 +45,6 @@ const siteConfig = {
   // If you have users set above, you add it here:
   users,
 
-  /* path to images for header/footer */
-  favicon: 'img/favicon.png',
-
   /* colors for website */
   colors: {
     primaryColor: '#660000',
@@ -78,11 +75,7 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags
-  scripts: ['https://buttons.github.io/buttons.js'],
-
-  /* Open Graph and Twitter card images */
-  ogImage: 'img/docusaurus.png',
-  twitterImage: 'img/docusaurus.png',
+  scripts: ['https://buttons.github.io/buttons.js']
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
