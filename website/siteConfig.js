@@ -12,7 +12,7 @@
 
 const siteConfig = {
   title: 'Legacy Rails Apps' /* title for your website */,
-  tagline: 'Upgrade the quality of an existing app!',
+  tagline: 'Apply the Ruby on Racetracks principles to legacy Rails apps!',
   url: 'https://www.legacyrailsapps.com' /* your website url */,
   baseUrl: '/' /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
