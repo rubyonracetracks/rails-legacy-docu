@@ -28,7 +28,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'}
+    {doc: '01-01-biggest_pet_peeve', label: 'Docs'}
   ],
 
   /* colors for website */
