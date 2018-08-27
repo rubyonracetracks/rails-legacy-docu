@@ -35,6 +35,8 @@ class Links extends React.Component {
             <li><a href="https://blog.planetargon.com/entries/7-steps-to-take-over-an-existing-rails-app-before-you-write-a-line-of-code">Planet Argon: 7 Steps to Take Over an Existing Rails App (Before You Write A Line Of Code)</a></li>
             <li><a href="https://www.justinweiss.com/articles/finding-your-way-around-a-new-rails-project/">Justin Weiss: Finding Your Way Around a New Rails Project</a></li>
           </ul>
+          <h2>Source Code</h2>
+          <a href="https://bitbucket.org/rubyonracetracks/rails-legacy-docu">rubyonracetracks/rails-legacy-docu</a>
           </div>
         </Container>
       </div>
