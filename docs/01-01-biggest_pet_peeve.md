@@ -13,7 +13,6 @@ My biggest pet peeve is lousy test suites.  A Rails app with no tests or very fe
 * A good test suite makes troubleshooting MUCH easier.  Having a comprehensive test suite means that if a feature stops working, it's easy to see which step in the multi-step process behind the feature is the weak link.  Not having a comprehensive suite means that it's difficult to pinpoint where the problem is, and this makes troubleshooting FAR more time-consuming.
 * A good test suite also forces you to write better code, because you must make it testable.  If you don't practice test-driven development, or if you don't add tests as soon as your new features work, you may end up writing spaghetti code that is difficult to test and refactor.
 * If you think it's hard to write tests before you add the feature or immediately after you add the feature, it will be harder to write them weeks, months, or years later, when what you did is no longer fresh in your mind.  It will be even harder for somebody else to do it.
-* Not writing tests in your Rails app puts you on the wrong side of history and the wrong side of the infamous 10X productivity divide.  If there are people who can create reliable, bug-free Rails apps WITHOUT a comprehensive test suite, they are as rare as people who become millionaires by winning the Publishers Clearing House sweepstakes.
 
 ## How To Prevent Lousy Test Suites In New Rails Apps
 * Go to the <a href="http://www.rubyonracetracks.com/">Ruby on Racetracks</a> site to learn about tools for automatically creating a new Rails app with basic features and a comprehensive test suite already included.
@@ -23,5 +22,6 @@ My biggest pet peeve is lousy test suites.  A Rails app with no tests or very fe
 
 ## Summary
 * Always have a comprehensive test suite in your Rails app.
-* Create tests before or immediately after adding features to your app.  If you wait, you are swimming upstream against history.
+* Create tests before or immediately after adding features to your app.
+* Not writing tests in your Rails app puts you on the wrong side of history and the wrong side of the infamous 10X productivity divide.  If there are people who can create reliable, bug-free Rails apps WITHOUT a comprehensive test suite, they are as rare as people who become millionaires by winning the Publishers Clearing House sweepstakes.
 * If you're too slow to create a complex Rails app with the "rails new" command WITHOUT being tempted to cut corners, please use an autopilot Rails generator system to create your app.

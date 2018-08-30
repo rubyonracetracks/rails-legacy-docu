@@ -86,18 +86,6 @@ const Block = props => (
   </Container>
 );
 
-const Description = props => (
-  <Block background="dark">
-    {[
-      {
-        content: 'This is another description of how this project is useful',
-        imageAlign: 'right',
-        title: 'Description',
-      },
-    ]}
-  </Block>
-);
-
 class Index extends React.Component {
   render() {
     let language = this.props.language || '';
@@ -105,9 +93,16 @@ class Index extends React.Component {
     return (
       <div>
         <HomeSplash language={language} />
-        <div className="mainContainer">
-          <Description />
-        </div>
+        
+        <Container padding={['bottom', 'top']} background="dark">
+          <h2>Welcome to Legacy Rails Apps!</h2>
+
+          While plenty has been written about how to start new Rails apps, much less has been written about how to work on legacy Rails apps.  This <a href="http://www.rubyonracetracks.com/">Ruby on Racetracks</a> site applies the Ruby on Racetracks principles to legacy apps.
+          <br /><br />
+          While the Generic App and Rails Neutrino app creation tools are designed to give you the same output every time you use them, every legacy app must be different, and the specific actions needed to build, test, and improve them will be different.  This Legacy Rails Apps site describes the general actions you need to take.
+          <br /><br />
+          Please note that compromises are needed to work on legacy Rails apps.  For example, adding RuboCop and Rails Best Practices is NOT recommended.  A legacy app that does not already have these tools in place likely has thousands of offenses to correct.  This would require an industrial scale cleanup at a time when you have more pressing issues to address.
+        </Container>
       </div>
     );
   }
