@@ -4,4 +4,37 @@ title: "Unit 2 Chapter 1: Custom Docker Image"
 sidebar_label: "Chapter 1: Custom Docker Image"
 ---
 
-## Prerequisites
+## Prerequisite
+It is assumed here that you are familiar with the special Ruby on Racetracks way of using Docker.  This is covered in the <a href="http://www.differentdockertutorial.com/">Different Docker Tutorial</a>.
+
+## Custom Docker Image Build Repository
+* Copy the Docker image creation repository from the Different Docker Tutorial.  Remove everything the .git directory, git init your repository, and push it to your own BitBucket (or GitHub) account.
+* Remove all directories except for the rails-general and 32rails-general directories.  Git add, commit, and push these changes.
+* Rename the rails-general and 32rails-general directories.  Rename the check-rails-general, rails-general-root, and rails-general-user scripts within the rails-general/usr_local_bin directory.  Git add, commit, and push these changes.
+* Use the SearchMonkey tool to find all instances of "rubyonracetracks" and replace them with your username.  Git add, commit, and push this change.
+* Use the SearchMonkey tool to find all instances of "rails-general" and replace them with the appropriate name.  Git add, commit, and push these changes.
+* Update the scripts within the usr_local_bin directory for your Docker image, especially the rails-*-user script.  Be sure to use the correct version of the Ruby language and the ffi, nokogiri, pg, rails gems.  (Having these elements in the custom Docker image speeds up the setup process of your Rails app.) You may need to revisit this step later.  Git add, commit, and push these changes.
+* Update the README.md file.  Git add, commit, and push these changes.
+
+## Docker Hub
+* If you haven't already done so, create an account on <a href="https://hub.docker.com/">Docker Hub</a>.
+* Add a repository for the custom 32-bit Docker image for the Rails app.
+* Add an automated build for the custom 64-bit Docker image for the Rails app.  Set the build to automatically be triggered when the 64-bit development Docker image (the one your Docker image is based on) is updated.
+* Start the automated build for your 64-bit Docker image.  If all goes well, you're ready to move on.  If not, you'll need to revisit the previous section in this chapter and update the scripts.
+
+## Creating the 32-Bit Image
+* Go back to the terminal window within your Docker image build repository.  Go to the directory for the 32-bit version of the Rails project's custom Docker image.  Enter the command "sh build.sh" to start the build process.
+* At the end of the build process, you will see the sanity checks, and you will be asked if you wish to push the new image.  If all goes well, enter "y" for yes.  If not, enter "n" for no, and fix the code for building the Docker image.
+
+## Custom Docker Image Usage Repository
+* Copy the Docker image usage repository from the Different Docker Tutorial.  Remove everything the .git directory, git init your repository, and push it to your own BitBucket (or GitHub) account.
+* Remove the scripts in the root directory for using the minimal, development, and Javascript images.  Git add, commit, and push these changes.
+* Rename the rails-general.sh script.  Git add, commit, and push this change.
+* Use the SearchMonkey tool to find all instances of "rubyonracetracks" and replace them with your username.  Git add, commit, and push this change.
+* Use the Searchmonkey tool to find all instances of "rails-general" and replace them with the appropriate name.  Git add, commit, and push these changes.
+* Update the README.md file.  Git add, commit, and push these changes.
+* On both 64-bit and 32-bit Debian Stable Linux systems, download and boot up your new Docker image.  Run the info.sh script in the shared directory to confirm that everything works as expected.
+
+## Next Step
+* When you are able to download and use your custom Docker images for the Rails app, you are ready to move on to the next chapter.
+* You may need to revisit this chapter later.
