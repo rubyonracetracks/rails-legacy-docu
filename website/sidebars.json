@@ -1,5 +1,6 @@
 {
   "docs": {
-	"Unit 1: Soapbox": ["01-01-biggest_pet_peeve", "01-02-other_pet_peeves", "01-03-other_red_flags"]
+	"Unit 1: Soapbox": ["01-01-biggest_pet_peeve", "01-02-other_pet_peeves", "01-03-other_red_flags"],
+	"Unit 2: Ruby on Racetracks": ["02-00-intro", "02-01-docker", "02-02-git", "02-03-build", "02-04-other"]
   }
 }
