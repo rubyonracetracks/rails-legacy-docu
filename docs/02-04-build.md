@@ -35,11 +35,19 @@ NOTE: This chapter may involve lots of trial-and-error.  Don't expect to breeze 
 ## Things to Change
 
 ### PostgreSQL
-* NOTE: I'm assuming here that the app uses a PostgreSQL database for the development environment.  If not, this PostgreSQL section is not applicable.
+* NOTE 1: I'm assuming here that the app uses a PostgreSQL database for the development environment.  If not, this PostgreSQL section is not applicable.
+* NOTE 2: If you start a new Rails app the Ruby on Racetracks way, SQLite is used in the development environment initially, but a script is provided to automate the process of setting things up in PostgreSQL.
 * The default PostgreSQL configuration provided in the Docker image assumes that you want good security and is designed for the Rails apps created under the Ruby on Racetracks system.  This configuration may not be suitable for some legacy Rails apps, which were configured differently.  For example, they may be configured to not require any username or password, or they may be configured to require a username but not a password.
 * Manually configuring PostgreSQL is a painful process that I'm guaranteed to screw up several times before getting it right.  This is why I insist on using a script to do it on autopilot.
 * Add the following commands to the beginning of your build_fast.sh script (just before the first command):
 ```
+# There may be no config/database.yml in the source code.  If that is
+# the case, there should be instructions on how to generate it or to
+# copy it from another file in the source code.  Add the command for
+# doing this below:
+#
+#
+
 #################################################################
 # BEGIN: section to omit if a username and password are specified
 #################################################################
@@ -102,12 +110,14 @@ bundle install
 
 # Create and configure the PostgreSQL user here for the development
 # and testing environments.
+
 # If the config/database.yml file specifies a username and password,
 # uncomment and customize the commands below:
 #
 # sudo -u postgres psql -c"CREATE ROLE $APP_DB_USER WITH CREATEDB LOGIN PASSWORD '$APP_DB_PASS';"
 # sudo -u postgres psql -c"CREATE DATABASE $APP_DB_NAME_DEV WITH OWNER=$APP_DB_USER;"
 # sudo -u postgres psql -c"CREATE DATABASE $APP_DB_NAME_TEST WITH OWNER=$APP_DB_USER;"
+# sudo -u postgres psql -c"CREATE DATABASE $APP_DB_NAME_PRO WITH OWNER=$APP_DB_USER;"
 
 # If the config/database.yml file specifies a username but not a password
 # for the development and testing environments, uncomment and customize
@@ -128,8 +138,8 @@ bundle install
 # If the config/database.yml file does not specify a username or
 # password for the development and testing environments, this means
 # that PostgreSQL needs a user with the username of the underlying 
-# system, and this user have superuser privileges.  If this is the case,
-# uncomment and customize the code below.
+# system, and this user should have superuser privileges.  If this is
+# the case, uncomment and customize the code below.
 
 # echo '----------------------------------------'
 # echo "sudo -u postgres createuser -d $USERNAME"
@@ -212,3 +222,6 @@ git push origin ruby_on_racetracks
 * When you are in the new Docker container based on the new Docker image, use the git clone command to download your fork of the app.  Use the command "git checkout ruby_on_racetracks" to switch to your branch, but do NOT run the build_fast.sh script just yet.
 * Update the build_fast.sh script.  Remove the commands for installing the software that now comes pre-installed in the new Docker image.
 * Run the build_fast.sh script.  If all goes well, all of the tests pass, the Rails sandbox works, the Rails server works, you can access the database from the GUI database browser, and you are ready to move on to the next chapter.
+
+## Congratulations!
+No matter what strange things happen in your app, you can reset everything and be back in business in just a few minutes.
