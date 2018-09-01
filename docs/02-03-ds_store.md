@@ -6,7 +6,7 @@ sidebar_label: "Chapter 3: .DS_Store"
 
 ## What's the point?
 * The .DS_Store file is sometimes automatically created on MacOS systems.  There is ZERO need to save it in the source code.
-* The purpose of this chapter is to remove instances of the .DS_Store file and to make sure that the Mac users working on this Rails app do not accidentally add the .DS_Store file.
+* The purpose of this chapter is to remove instances of the .DS_Store file and to make sure that the Mac users working on this Rails app do not accidentally add any.
 
 ## .DS_Store File
 * Use the SearchMonkey tool to search the Rails app's source code to see if there are any instances of the file .DS_Store in it.  If there are any, you must go through the rest of this chapter.
