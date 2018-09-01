@@ -1,0 +1,16 @@
+---
+id: 04-05-ruby_version
+title: "Unit 4 Chapter 5: Upgrading the Ruby Version"
+sidebar_label: "Chapter 5: Ruby Version"
+---
+
+## What's the Point?
+Sooner or later, a given version of Ruby will be unsupported.  It's easier to make many small upgrades than to make a big upgrade all at once.
+
+## Procedure
+* Enter the command "rbenv versions" to see which versions of Ruby you have installed in the Docker container.
+* Upgrade the Ruby version in the app.  Make sure to cover every Ruby version specification, such as the .ruby_version file, Gemfile, .travis.yml, and other configuration files.  It's a good idea to use the SearchMonkey tool to help with this.
+* Use the "rbenv use" command to switch to the newer version of Ruby.
+* Run the git_check.sh script.
+* Again, you may need to make changes due to errors or deprecation warnings.  Make these changes, and run the git_check.sh script.
+* If all goes well, you are ready to git add/commit/push your changes.

@@ -1,0 +1,23 @@
+---
+id: 04-01-unpinned
+title: "Unit 4 Chapter 1: Upgrading Unpinned Gems"
+sidebar_label: "Chapter 1: Unpinned Gems"
+---
+
+## Unpinned Gems in the Gemfile
+* If you didn't already do so in Unit 2, pin the current gem versions in the Gemfile.  Pin them to the current versions specified in the Gemfile.lock file.
+* Run the git_check.sh script.
+* Any gems not pinned in the Gemfile will automatically be upgraded.  Again, you should avoid upgrading everything all at once, because this means a greater risk of breakages AND a more difficult troubleshooting process.
+* If necessary, git add/commit/push your changes.
+
+## Pinning the Biggest Gems
+* At the beginning of the gem list in the Gemfile, create a section for the gems that are the most time-consuming to install.  These gems are ffi, nokogiri, pg, and rails.  If any of these gem listings appear later in the file, delete them.
+* Pin these gems.  This ensures that the upgrade_gems.sh script does NOT automatically upgrade them.  If these gems are not already installed in the development environment, this causes the "bundle upgrade" process to take longer.
+* In other words, the idea is to make sure to always have the correct versions of these gems pre-installed in the Docker image.
+* Run the git_check.sh script.
+* If necessary, git add/commit/push your changes.
+
+## Upgrading Unlisted Gems
+* Run the upgrade_gems.sh script, which automatically runs the git_check.sh script in the process.  If all goes well, all tests pass.
+* If there are problems, you may need to add the offending gem to the Gemfile and pin it to an older version.  Run the upgrade_gems.sh script to see if that pans out.
+* When you can run the upgrade_gems.sh script and not get errors, you're ready to git add/commit/push your changes and move on.

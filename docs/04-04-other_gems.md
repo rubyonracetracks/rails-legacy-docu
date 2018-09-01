@@ -1,0 +1,12 @@
+---
+id: 04-04-other_gems
+title: "Unit 4 Chapter 4: Upgrading Other Gems"
+sidebar_label: "Chapter 4: Other Gems"
+---
+
+## Procedure
+* Run the test_code.sh script, and look at the Gemsurance Report that is produced.  While the vulnerabilities should be gone, there will likely be many outdated gems.
+* Note that the gems listed in bold are listed in the Gemfile.  The non-bolded gems are dependencies that only appear in the Gemfile.lock file.
+* For each bolded gem that is outdated, find out its latest version, update the Gemfile, and run the upgrade_gems.sh script.  If all goes well, git add/commit/push your change.
+* If upgrading a gem doesn't pan out, you may need to make adjustments, upgrade to an older version, or skip upgrading it.
+* It may sometimes be necessary to unpin the versions of certain gems in the Gemfile, see which version appears in the Gemfile.lock file, and (if everything pans out) pin that version in the Gemfile.

@@ -1,0 +1,9 @@
+---
+id: 04-00-intro
+title: "Unit 4: Introduction"
+sidebar_label: "Introduction"
+---
+
+Unit 4 is dedicated to upgrading the gems and Ruby version of the app.  Now that you have filled in the missing tests, you can feel confident about making upgrades.  If upgrading anything causes things to break, running the upgrade_gems.sh script will alert you to this, and you'll know which upgrades to hold back on until resolve those issues.
+<br /><br />
+Upgrades are done in stages.  Making too many upgrades at once not only increases the risk of breakages but also makes it more difficult to troubleshoot them.
