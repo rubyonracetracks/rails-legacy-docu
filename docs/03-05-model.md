@@ -1,0 +1,21 @@
+---
+id: 03-05-model
+title: "Unit 3 Chapter 5: Model Tests"
+sidebar_label: "Chapter 5: Model Tests"
+---
+
+In this chapter, you will add model tests to the app.
+
+## Outlining
+From the root directory of the app, enter the command "sh outline.sh".  This generates outlines and block diagrams of the MVC architecture in the log directory.  Additionally, the block diagrams of the models will include lists of the parameters in each one.
+
+## Seeding
+* If there isn't already a seeding script in the app, add one.
+* Go to the tmux window where you are running the Rails server.  Press Ctrl-c to stop the server.  Then enter the command "sh seed.sh; sh server.sh".  This should seed the server and start the app on the local Rails server.
+* If necessary, fix the seeding script.
+* If all goes well, git add/commit/push the changes.
+
+## Tests To Add
+* For every object with a model, there should be model tests for it (in spec/models, in test/models, or in an integration test of consolidated model tests).
+* For every attribute in each model, there should be at least one assertion for it.
+* Each time you add a set of model tests and get them to pass, git add/commit/push your changes.
