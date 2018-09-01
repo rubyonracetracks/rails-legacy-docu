@@ -4,6 +4,11 @@ title: "Unit 2 Chapter 1: Custom Docker Image"
 sidebar_label: "Chapter 1: Custom Docker Image"
 ---
 
+## What's the point?
+* A Docker image can be used to provide a pre-built, pre-installed, and pre-configured development environment.
+* The custom Docker images for the app should include all necessary software that's time-consuming to install.  This makes it easy to set up your development environment and to quickly reset it to initial conditions.
+* When you reset your development environment, git clone the Rails app in the Docker container, and run the build_fast.sh script in the app, you should be ready to roll.  This should take just a few minutes, not hours.
+
 ## Prerequisite
 It is assumed here that you are familiar with the special Ruby on Racetracks way of using Docker.  This is covered in the <a href="http://www.differentdockertutorial.com/">Different Docker Tutorial</a>.
 
@@ -13,7 +18,10 @@ It is assumed here that you are familiar with the special Ruby on Racetracks way
 * Rename the rails-general and 32rails-general directories.  Rename the check-rails-general, rails-general-root, and rails-general-user scripts within the rails-general/usr_local_bin directory.  Git add, commit, and push these changes.
 * Use the SearchMonkey tool to find all instances of "rubyonracetracks" and replace them with your username.  Git add, commit, and push this change.
 * Use the SearchMonkey tool to find all instances of "rails-general" and replace them with the appropriate name.  Git add, commit, and push these changes.
-* Update the scripts within the usr_local_bin directory for your Docker image, especially the rails-*-user script.  Be sure to use the correct version of the Ruby language and the ffi, nokogiri, pg, rails gems.  (Having these elements in the custom Docker image speeds up the setup process of your Rails app.) You may need to revisit this step later.  Git add, commit, and push these changes.
+* Update the scripts within the usr_local_bin directory for your Docker image, especially the rails-*-user script.
+  * Check the Gemfile and Gemfile.lock files for the correct version of the Ruby language and the ffi, nokogiri, pg, rails gems.  (Having these elements in the custom Docker image speeds up the setup process of your Rails app.)
+  * Check the Rails app's setup instructions to see if there's anything else you need to add, such as PostgreSQL extensions or PhantomJS.
+  * You may need to revisit this step later.  Git add, commit, and push these changes.
 * Update the README.md file.  Git add, commit, and push these changes.
 
 ## Docker Hub
@@ -36,5 +44,5 @@ It is assumed here that you are familiar with the special Ruby on Racetracks way
 * On both 64-bit and 32-bit Debian Stable Linux systems, download and boot up your new Docker image.  Run the info.sh script in the shared directory to confirm that everything works as expected.
 
 ## Next Step
-* When you are able to download and use your custom Docker images for the Rails app, you are ready to move on to the next chapter.
+* When you are able to download and use your custom Docker images, you are ready to move on to the next chapter.
 * You may need to revisit this chapter later.
