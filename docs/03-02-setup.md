@@ -12,9 +12,13 @@ In this chapter, you will set up the tests if this task has not already been com
 * I prefer MiniTest.  Using MiniTest makes it possible to use the Rails Neutrino source code as a giant cheat sheet.  I chose MiniTest over RSpec, because that's what Rails Tutorial uses.
 * That said, if you are more comfortable and familiar with RSpec, then use that.  You can use older versions of Rails Tutorial for guidance, but be aware that many things have changed since those days.  (Rails Tutorial used RSpec initially but later switched to MiniTest.)
 
-## Destroying Data Between Tests
+## Destroying Data Objects Between Tests
+* The test suite should be destroying data objects between tests.  Leftover data objects between tests can cause intermittent test failures.  Cleaning the database between each test helps to ensure consistent results every time you run the tests.
+* If the speed of the test suite is a concern (because creating and destroying data objects is time-consuming), it's better to consolidate several tests into one test.
 
 ## Database Cleaner
+* If you are using RSpec, use the <a href="https://github.com/DatabaseCleaner/database_cleaner">Database Cleaner</a> gem to clear out the database between each test.
+* For an example of Database Cleaner at work, go to http://www.virtuouscode.com/2012/08/31/configuring-database_cleaner-with-rails-rspec-capybara-and-selenium/ .
 
 ## Consolidating Tests
 * Some apps are plagued with time-consuming test suites.
