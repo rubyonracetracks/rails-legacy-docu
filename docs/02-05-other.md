@@ -30,7 +30,8 @@ You will add many additional Ruby on Racetracks features to the legacy app.  The
 
 ## Procedure
 * NOTE 1: Do not add the RuboCop or Rails Best Practices gems to a legacy app that doesn't already have them.  Cleaning up thousands of offenses is an industrial-sized job.
-* NOTE 2: If you need to keep the Ruby on Racetracks features out of your pull requests, skip adding the annotate gem.  Using the annotate gem adds comments to a large number of files.  Modifying so many files for the ruby_on_racetracks branch increases the risk of difficult merge conflicts.
+* NOTE 2: Some of the steps (like enabling SSL or configuring Puma) may have already been completed in the Rails app.  If that's the case, skip these steps.
+* NOTE 3: If you need to keep the Ruby on Racetracks features out of your pull requests, skip adding the annotate gem.  Using the annotate gem adds comments to a large number of files.  Modifying so many files for the ruby_on_racetracks branch increases the risk of difficult merge conflicts.
 * For each mod-*-*.rb script highlighted by SearchMonkey, perform the actions specified in the "WICHTIG" statement in the Rails app.  You may have to make slight changes along the way.  For example, the scripts for running tests are set up for MiniTest, not RSpec.
 * Try out the feature added, and make sure everything works.
 * When you see that all of the features you added in that particular mod-*-*.rb script are completed, git add/commit/push the change into the ruby_on_racetracks branch of the Rails app.
@@ -44,3 +45,10 @@ You will add many additional Ruby on Racetracks features to the legacy app.  The
 * Go back to the master branch, and then start a new branch.  Just add "pr_" to the beginning of the name of the branch of your new feature.
 * Use the "git cherry-pick" command to select the changes from the new feature branch you wish to add to the pr_* branch.
 * Run the git_check.sh script to make sure you've covered all your bases.  When everything is ready, make a pull request for your pr_new_feature branch.
+
+## Ruby on Racetracks Elements to Push
+* If you need to keep most of the Ruby on Racetracks elements out of your pull requests but need to submit certain ones (such as switching from WEBrick to Puma), this section of this chapter is for you.
+* For each feature addressed in a Git commit, go back to the master branch and then start a new branch for the feature.
+  * Use the "git cherry-pick" command to select the changes from ruby_on_racetracks that you wish to submit.
+  * Run the git_check.sh script in your new branch.
+  * When everything is ready, make a new pull request for this branch.
