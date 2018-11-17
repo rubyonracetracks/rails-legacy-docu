@@ -1,6 +1,6 @@
 {
   "docs": {
-	"Unit 1: Soapbox": ["01-01-biggest_pet_peeve", "01-02-other_pet_peeves", "01-03-other_red_flags"],
+	"Unit 1: Soapbox": ["01-01", "01-02", "01-03"],
 	"Unit 2: Ruby on Racetracks": ["02-00-intro", "02-01-docker", "02-02-git", "02-03-ds_store", "02-04-build", "02-05-other"],
 	"Unit 3: Test Suite": ["03-00-intro", "03-01-overview", "03-02-setup", "03-03-integration", "03-04-helper", "03-05-model", "03-06-controller", "03-07-lib"],
 	"Unit 4: Upgrades": ["04-00-intro", "04-01-unpinned", "04-02-vulnerabilities", "04-03-deprecations", "04-04-other_gems", "04-05-ruby_version", "04-06-docker_image"],
