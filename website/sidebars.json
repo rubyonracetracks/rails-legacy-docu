@@ -3,7 +3,7 @@
 	"Unit 1: Soapbox": ["01-01", "01-02", "01-03"],
 	"Unit 2: Ruby on Racetracks": ["02-00", "02-01", "02-02", "02-03", "02-04", "02-05"],
 	"Unit 3: Test Suite": ["03-00", "03-01", "03-02", "03-03", "03-04", "03-05", "03-06", "03-07"],
-	"Unit 4: Upgrades": ["04-00-intro", "04-01-unpinned", "04-02-vulnerabilities", "04-03-deprecations", "04-04-other_gems", "04-05-ruby_version", "04-06-docker_image"],
+	"Unit 4: Upgrades": ["04-00", "04-01", "04-02", "04-03", "04-04", "04-05", "04-06"],
 	"Conclusions": ["conclusions"]
   }
 }
