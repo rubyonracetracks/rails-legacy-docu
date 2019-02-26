@@ -1,5 +1,5 @@
 ---
-id: a-02
+id: a-rubymn2
 title: "Example: New Ruby.MN"
 sidebar_label: "New Ruby.MN"
 ---

@@ -1,5 +1,5 @@
 ---
-id: a-04
+id: a-codetriage
 title: "Example: CodeTriage"
 sidebar_label: "CodeTriage"
 ---

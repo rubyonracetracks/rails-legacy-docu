@@ -1,5 +1,5 @@
 ---
-id: a-05
+id: a-octobox
 title: "Example: Octobox"
 sidebar_label: "Octobox"
 ---

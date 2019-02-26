@@ -1,5 +1,5 @@
 ---
-id: a-06
+id: a-bridge_troll
 title: "Example: Bridge Troll"
 sidebar_label: "Bridge Troll"
 ---

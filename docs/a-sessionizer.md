@@ -1,5 +1,5 @@
 ---
-id: a-03
+id: a-sessionizer
 title: "Example: Minnestar Sessionizer"
 sidebar_label: "Minnestar Sessionizer"
 ---

@@ -1,5 +1,5 @@
 ---
-id: a-01
+id: a-adoptatree
 title: "Example: Adopt-A-Tree"
 sidebar_label: "Adopt-A-Tree"
 ---
