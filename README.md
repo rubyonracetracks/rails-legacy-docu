@@ -14,9 +14,9 @@ This app was created with the aid of Docusaurus Neutrino, which automatically cr
 * clean.sh: This script removes the website/build, website/i18n, and website/node_modules directories to make it easier to search for keywords in your source code.  However, you will need to stop your local server, rebuild this app, and restart your server.
 
 ## Setup Procedure
-* If you are using Docker, you need at least two tmux windows.  If you have Docusaurus installed directly in your host OS, you'll need at least two terminal windows or tabs.
-* In the first window, enter this app's root directory and enter the command "sh all.sh; sh server.sh".
-* In the second window, enter this app's root directory.  Use this window for running the scripts and entering Git commands.
+* If you are using Docker, you need at least two LXTerminal tabs.
+* In the first tab, enter this app's root directory and enter the command "sh all.sh; sh server.sh".
+* In the second tab, enter this app's root directory.  Use this window for running the scripts and entering Git commands.
 
 ## Entering NPM Commands
 * Please note that "npm commands" should be executed within the website directory and NOT in this project's root directory.  You may need a third window for this.
