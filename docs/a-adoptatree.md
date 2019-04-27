@@ -18,12 +18,12 @@ If you have not already done so, install Docker on your machine.  More details a
 cd
 mkdir OpenTwinCities
 cd OpenTwinCities
-git clone https://github.com/OpenTwinCities/docker-debian-stretch.git
-cd docker-debian-stretch
-sh rails-adoptatree.sh
+git clone https://gitlab.com/rubyonracetracks/docker-debian-buster-use.git
+cd docker-debian-buster-use
+sh rbenv-rails-adoptatree.sh
 ```
 * When prompted for a port offset value, enter "11".
-* Enter the command "cd rails-adoptatree; sh download_new_image.sh" and follow the instructions.
+* Enter the command "cd rbenv-rails-adoptatree; sh download_new_image.sh" and follow the instructions.
 * It will take a few minutes to download the Docker image.  When the process is finished, a Docker container will be created for you, and you will be automatically logged in.
 
 ## Setting Up the App
