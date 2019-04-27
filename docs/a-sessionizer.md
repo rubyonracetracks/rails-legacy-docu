@@ -20,12 +20,12 @@ If you have not already done so, install Docker on your machine.  More details a
 cd
 mkdir jhsu802701
 cd jhsu802701
-git clone https://gitlab.com/jhsu802701/docker-debian-stretch
-cd docker-debian-stretch
-sh rails-sessionizer.sh
+git clone https://gitlab.com/jhsu802701/docker-debian-buster-use
+cd docker-debian-buster-use
+sh rbenv-rails-sessionizer.sh
 ```
 * When prompted for a port offset value, enter "13".
-* Enter the command "cd rails-sessionizer; sh download_new_image.sh" and follow the instructions.
+* Enter the command "cd rbenv-rails-sessionizer; sh download_new_image.sh" and follow the instructions.
 * It will take a few minutes to download the Docker image.  When the process is finished, a Docker container will be created for you, and you will be automatically logged in.
 
 ## Database Configuration
