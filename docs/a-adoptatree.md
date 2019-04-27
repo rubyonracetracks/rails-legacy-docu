@@ -18,7 +18,7 @@ If you have not already done so, install Docker on your machine.  More details a
 cd
 mkdir OpenTwinCities
 cd OpenTwinCities
-git clone https://gitlab.com/OpenTwinCities/docker-debian-buster-use.git
+git clone https://github.com/OpenTwinCities/docker-debian-buster-use.git
 cd docker-debian-buster-use
 sh rbenv-rails-adoptatree.sh
 ```
