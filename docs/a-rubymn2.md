@@ -20,8 +20,8 @@ If you have not already done so, install Docker on your machine.  More details a
 cd
 mkdir jhsu802701
 cd jhsu802701
-git clone https://gitlab.com/jhsu802701/docker-debian-buster-use
-cd docker-debian-buster-use
+git clone https://gitlab.com/jhsu802701/docker-debian-stretch
+cd docker-debian-stretch
 sh rbenv-rails-rubymn2.sh
 ```
 * When prompted for a port offset value, enter "12".
