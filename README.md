@@ -1,6 +1,7 @@
 # Welcome to Rails Legacy Apps!
 
 [![Build Status](https://semaphoreci.com/api/v1/jhsu802701/rails-legacy-docu/branches/master/badge.svg)](https://semaphoreci.com/jhsu802701/rails-legacy-docu)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b8214e4f-9b1d-429c-bbad-6eeb7e601f2d/deploy-status)](https://app.netlify.com/sites/rails-legacy-docu/deploys)
 
 This app was created with the aid of Docusaurus Neutrino, which automatically creates a new Docusaurus app from scratch.  It's like Rails Neutrino but for Docusaurus instead.
 
