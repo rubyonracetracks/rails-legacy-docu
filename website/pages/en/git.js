@@ -25,7 +25,7 @@ class Git extends React.Component {
               <h1>Git</h1>
             </header>
           
-          Source Code: <a href="https://bitbucket.org/rubyonracetracks/rails-legacy-docu">rubyonracetracks/rails-legacy-docu</a>
+          Source Code: <a href="https://github.com/rubyonracetracks/rails-legacy-docu">https://github.com/rubyonracetracks/rails-legacy-docu</a>
           </div>
         </Container>
       </div>
