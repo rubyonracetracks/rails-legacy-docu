@@ -11,21 +11,20 @@ sidebar_label: "New Ruby.MN"
 * I used my [Generic App gem](https://www.genericapp.net/) to create a new site with the Devise gem for authentication and with integration tests.
 * The new Ruby.MN site is at https://rubymn2.herokuapp.com/.
 
-## Prerequisites
-If you have not already done so, install Docker on your machine.  More details are covered in the [Different Docker Tutorial](https://www.differentdockertutorial.com/).
-
-## Entering the Custom Docker Container
+## Fresh Start
+* If you have not already done so, install Docker on your machine.  More details are covered in the [Different Docker Tutorial](https://www.differentdockertutorial.com/).
+* If you still have the jhsu802701 directory, delete it.
 * Enter the following commands in LXTerminal:
 ```
 cd
 mkdir jhsu802701
 cd jhsu802701
-git clone https://gitlab.com/jhsu802701/docker-debian-stretch
-cd docker-debian-stretch
-sh rbenv-rails-rubymn2.sh
+git clone https://gitlab.com/jhsu802701/docker-debian-stretch-use.git
+cd docker-debian-stretch-use
+sh rvm-rails-rubymn2.sh
 ```
 * When prompted for a port offset value, enter "12".
-* Enter the command "cd rbenv-rails-rubymn2; sh download_new_image.sh" and follow the instructions.
+* Enter the command "cd rvm-rails-rubymn2; sh download_new_image.sh" and follow the instructions.
 * It will take a few minutes to download the Docker image.  When the process is finished, a Docker container will be created for you, and you will be automatically logged in.
 
 ## Setting Up The App
