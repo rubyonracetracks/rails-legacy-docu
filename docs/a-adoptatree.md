@@ -12,27 +12,30 @@ sidebar_label: "Adopt-A-Tree"
 ## Prerequisites
 If you have not already done so, install Docker on your machine.  More details are covered in the [Different Docker Tutorial](https://www.differentdockertutorial.com/).
 
-## Entering the Custom Docker Container
+## Fresh Start
+* If you have not already done so, install Docker on your machine.  More details are covered in the [Different Docker Tutorial](https://www.differentdockertutorial.com/).
+* If you still have the OpenTwinCities directory, delete it.
 * Enter the following commands in LXTerminal:
 ```
 cd
 mkdir OpenTwinCities
 cd OpenTwinCities
-git clone https://github.com/OpenTwinCities/docker-debian-stretch.git
-cd docker-debian-stretch
-sh rails-adoptatree.sh
+git clone https://github.com/OpenTwinCities/docker-debian-stretch-use.git
+cd docker-debian-stretch-use
+sh rvm-rails-adoptatree.sh
 ```
 * When prompted for a port offset value, enter "11".
-* Enter the command "cd rbenv-rails-adoptatree; sh download_new_image.sh" and follow the instructions.
+* Enter the command "cd rvm-rails-adoptatree; sh download_new_image.sh" and follow the instructions.
 * It will take a few minutes to download the Docker image.  When the process is finished, a Docker container will be created for you, and you will be automatically logged in.
 
-## Setting Up the App
+## Setting Up The App
 * In Docker, enter the following commands:
 ```
 git clone https://github.com/OpenTwinCities/adopt-a-tree.git
 cd adopt-a-tree
 sh build_fast.sh; sh server.sh
 ```
+* The build_fast.sh script installs the gems, configures the PostgreSQL database, and runs the tests. This process takes just a few minutes. If all goes well, all of the tests will pass.
 
 ## Viewing the App
 * In a few minutes, the build process will be finished, and you will see the Rails server running.
