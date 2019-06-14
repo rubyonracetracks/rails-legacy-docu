@@ -9,9 +9,6 @@ sidebar_label: "Adopt-A-Tree"
 * I found out about the Adopt-A-Tree app through the group [Open Twin Cities](http://www.opentwincities.org/), which builds and maintains this app for Minneapolis.
 * As a collaborator, I added my Ruby on Racetracks elements to this app.  I also upgraded the Ruby version from 2.2 to 2.6 and the Rails version from 4.1 to 5.2.
 
-## Prerequisites
-If you have not already done so, install Docker on your machine.  More details are covered in the [Different Docker Tutorial](https://www.differentdockertutorial.com/).
-
 ## Fresh Start
 * If you have not already done so, install Docker on your machine.  More details are covered in the [Different Docker Tutorial](https://www.differentdockertutorial.com/).
 * If you still have the OpenTwinCities directory, delete it.
