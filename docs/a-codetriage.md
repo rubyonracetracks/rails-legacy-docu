@@ -7,9 +7,6 @@ sidebar_label: "CodeTriage"
 ## Back Story
 [CodeTriage](https://www.codetriage.com/) is a site where users can pick their favorite GitHub repositories for receiving an email about a different open issue each day.
 
-## Prerequisites
-If you have not already done so, install Docker on your machine.  More details are covered in the [Different Docker Tutorial](https://www.differentdockertutorial.com/).
-
 ## Fresh Start
 * If you have not already done so, install Docker on your machine.  More details are covered in the [Different Docker Tutorial](https://www.differentdockertutorial.com/).
 * If you still have the jhsu802701 directory, delete it.
