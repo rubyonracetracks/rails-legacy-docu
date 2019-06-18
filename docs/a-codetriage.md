@@ -10,18 +10,20 @@ sidebar_label: "CodeTriage"
 ## Prerequisites
 If you have not already done so, install Docker on your machine.  More details are covered in the [Different Docker Tutorial](https://www.differentdockertutorial.com/).
 
-## Entering the Custom Docker Container
+## Fresh Start
+* If you have not already done so, install Docker on your machine.  More details are covered in the [Different Docker Tutorial](https://www.differentdockertutorial.com/).
+* If you still have the jhsu802701 directory, delete it.
 * Enter the following commands in LXTerminal:
 ```
 cd
 mkdir jhsu802701
 cd jhsu802701
-git clone https://gitlab.com/jhsu802701/docker-debian-stretch
-cd docker-debian-stretch
-sh rails-codetriage.sh
+git clone https://gitlab.com/jhsu802701/docker-debian-stretch-use
+cd docker-debian-stretch-use
+sh rvm-rails-codetriage.sh
 ```
 * When prompted for a port offset value, enter "14".
-* Enter the command "cd rails-codetriage; sh download_new_image.sh" and follow the instructions.
+* Enter the command "cd rvm-rails-codetriage; sh download_new_image.sh" and follow the instructions.
 * It will take a few minutes to download the Docker image.  When the process is finished, a Docker container will be created for you, and you will be automatically logged in.
 
 ## Setting Up The App
