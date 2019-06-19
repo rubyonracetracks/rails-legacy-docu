@@ -7,6 +7,26 @@ sidebar_label: "Bridge Troll"
 ## Back Story
 [Bridge Troll](https://www.bridgetroll.org/) is an event management system for RailsBridge, MobileBridge, GoBridge, and other -Bridge software development workshop events.
 
+## Fresh Start
+* If you have not already done so, install Docker on your machine.  More details are covered in the [Different Docker Tutorial](https://www.differentdockertutorial.com/).
+* If you still have the jhsu802701 directory, delete it.
+* Enter the following commands in LXTerminal:
+```
+cd
+mkdir jhsu802701
+cd jhsu802701
+git clone https://gitlab.com/jhsu802701/docker-debian-stretch-use
+cd docker-debian-stretch-use
+sh rvm-rails-bridge_troll.sh
+```
+* When prompted for a port offset value, enter "16".
+* Enter the command "cd rvm-rails-codetriage; sh download_new_image.sh" and follow the instructions.
+* It will take a few minutes to download the Docker image.  When the process is finished, a Docker container will be created for you, and you will be automatically logged in.
+
+
+
+
+
 ## Prerequisites
 If you have not already done so, install Docker on your machine.  More details are covered in the [Different Docker Tutorial](https://www.differentdockertutorial.com/).
 
